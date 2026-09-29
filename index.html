@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexus Vehicle Appraisal</title>
+
+  <script>
+    window.onload = function () {
+      const phone = "2818531436";
+      const message = "I'm currently in the Service waiting area and would love to get my vehicle appraised.";
+      window.location.href = "sms:" + phone + "?body=" + encodeURIComponent(message);
+    };
+  </script>
+</head>
+
+<body>
+  <h2>Opening Messages...</h2>
+
+  <p>
+    If Messages doesn't open automatically,
+    <a href="sms:2818531436?body=I%27m%20currently%20in%20the%20Service%20waiting%20area%20and%20would%20love%20to%20get%20my%20vehicle%20appraised.">
+      tap here to request your appraisal.
+    </a>
+  </p>
+</body>
+</html>
